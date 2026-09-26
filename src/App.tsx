@@ -17,7 +17,12 @@ function CampusVideoApp() {
       </main>
       <footer className="site-footer">
         <span className="brand-mark brand-mark--small" aria-hidden="true">CV</span>
-        <p>Campus Video · Aprende a tu ritmo, estés donde estés.</p>
+        <div className="site-footer__copy">
+          <p className="site-footer__credit">
+            Desarrollado por: Juan Montufar · Seminario de Privados · 1390-22-12623
+          </p>
+          <p>Campus Video · Aprende a tu ritmo, estés donde estés.</p>
+        </div>
       </footer>
       {authMode && (
         <AuthModal initialMode={authMode} onClose={() => setAuthMode(null)} />
